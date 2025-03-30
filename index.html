@@ -117,15 +117,13 @@
       background: transparent;
       border: 2px solid #ff3c00;
       border-radius: 8px;
-      padding: 12px 16px;
+      padding: 10px 16px;
       display: flex;
       align-items: center;
-      gap: 12px;
+      justify-content: space-between;
       color: #fff;
       text-decoration: none;
       font-size: 15px;
-      position: relative;
-      overflow: hidden;
       transition: all 0.3s ease;
     }
 
@@ -135,8 +133,7 @@
       transform: scale(1.03);
     }
 
-    .link-card img.icon-left,
-    .link-card img.icon-right {
+    .link-card img.icon-left {
       width: 24px;
       height: 24px;
       border-radius: 6px;
@@ -144,9 +141,20 @@
       animation: flicker 2.5s infinite alternate;
     }
 
+    .link-card img.icon-right {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      object-fit: contain;
+      margin-left: 10px;
+    }
+
     .link-card span {
       flex: 1;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .footer {
