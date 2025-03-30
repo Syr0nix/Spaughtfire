@@ -17,6 +17,12 @@
       100% { background-position: 0% 50%; }
     }
 
+    @keyframes flicker {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.05); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -36,7 +42,6 @@
       overflow: hidden;
     }
 
-    /* ✨ Animated granite background */
     body::before {
       content: '';
       position: absolute;
@@ -51,7 +56,6 @@
       z-index: -1;
     }
 
-    /* 🦊 Glowing fox background */
     body::after {
       content: '';
       background: url('https://raw.githubusercontent.com/Syr0nix/Spaughtfire/main/BackGround.png') no-repeat bottom right;
@@ -116,10 +120,13 @@
       padding: 12px 16px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 12px;
       color: #fff;
       text-decoration: none;
       font-size: 15px;
+      position: relative;
+      overflow: hidden;
       transition: all 0.3s ease;
     }
 
@@ -129,7 +136,8 @@
       transform: scale(1.03);
     }
 
-    .link-card img.icon {
+    .link-card img.icon-left,
+    .link-card img.icon-right {
       width: 24px;
       height: 24px;
       border-radius: 6px;
@@ -137,10 +145,8 @@
       animation: flicker 2.5s infinite alternate;
     }
 
-    @keyframes flicker {
-      0% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.85; transform: scale(1.05); }
-      100% { opacity: 1; transform: scale(1); }
+    .link-card img.icon-right {
+      margin-left: auto;
     }
 
     .footer {
@@ -174,28 +180,44 @@
 
   <div class="links">
     <a class="link-card" href="https://youtube.com/watch?v=FRgIvK-_rOA">
-      <img class="icon" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">YouTube
+      <img class="icon-left" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">
+      YouTube
+      <img class="icon-right" src="https://www.youtube.com/s/desktop/9d0a5f17/img/favicon_32.png">
     </a>
     <a class="link-card" href="https://www.instagram.com/spaughtfire/">
-      <img class="icon" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">Instagram
+      <img class="icon-left" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">
+      Instagram
+      <img class="icon-right" src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png">
     </a>
     <a class="link-card" href="https://www.lovense.com/r/vkdzp4">
-      <img class="icon" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">Lovense
+      <img class="icon-left" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">
+      Lovense
+      <img class="icon-right" src="https://www.lovense.com/favicon.ico">
     </a>
     <a class="link-card" href="http://twitch.tv/spaughtfire">
-      <img class="icon" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">Twitch
+      <img class="icon-left" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">
+      Twitch
+      <img class="icon-right" src="https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png">
     </a>
     <a class="link-card" href="https://twitter.com/SpaughtFire">
-      <img class="icon" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">Twitter
+      <img class="icon-left" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">
+      Twitter
+      <img class="icon-right" src="https://abs.twimg.com/favicons/twitter.ico">
     </a>
     <a class="link-card" href="https://bsky.app/profile/spaughtfire.bsky.social">
-      <img class="icon" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">Bluesky
+      <img class="icon-left" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">
+      Bluesky
+      <img class="icon-right" src="https://bsky.app/favicon.ico">
     </a>
     <a class="link-card" href="https://ko-fi.com/spaughtfire0567">
-      <img class="icon" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">Ko-fi
+      <img class="icon-left" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Profile.png?raw=true">
+      Ko-fi
+      <img class="icon-right" src="https://ko-fi.com/favicon.ico">
     </a>
     <a class="link-card" href="https://fansly.com/Spaughtfire/posts">
-      <img class="icon" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Fanslypfp?raw=true">Fansly
+      <img class="icon-left" src="https://github.com/Syr0nix/Spaughtfire/blob/main/Fanslypfp?raw=true">
+      Fansly
+      <img class="icon-right" src="https://fansly.com/favicon.ico">
     </a>
   </div>
 
