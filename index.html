@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Spaughtfire | Firefighter Links</title>
+  <title>@spaughtfire | Links</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * {
       margin: 0;
@@ -12,15 +13,16 @@
     }
 
     body {
-      background: #1a1a1a url('https://i.imgur.com/Q84T0Dk.png') repeat;
-      color: #fff;
+      background: url('https://raw.githubusercontent.com/Syr0nix/Spaughtfire/main/BackGround.png') no-repeat center center fixed;
+      background-size: cover;
       font-family: 'Poppins', sans-serif;
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 50px 20px;
       min-height: 100vh;
-      overflow-x: hidden;
+      padding: 50px 20px;
+      backdrop-filter: brightness(0.8);
     }
 
     .avatar {
@@ -36,7 +38,7 @@
       font-family: 'Orbitron', sans-serif;
       font-size: 28px;
       color: #ffcc00;
-      text-shadow: 0 0 8px #ff0000;
+      text-shadow: 0 0 10px #ff0000;
     }
 
     p.tagline {
@@ -56,30 +58,36 @@
     }
 
     .link-card {
-      background: #2b2b2b;
+      background: rgba(20, 20, 20, 0.85);
       border: 2px solid #ff3c00;
-      padding: 15px 20px;
+      padding: 14px 20px;
       border-radius: 12px;
       color: #fff;
       text-decoration: none;
       font-size: 16px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      transition: all 0.25s ease;
+      justify-content: flex-start;
+      transition: all 0.3s ease;
       box-shadow: 0 0 10px rgba(255, 60, 0, 0.3);
+    }
+
+    .link-card i {
+      margin-right: 12px;
+      font-size: 18px;
+      color: #ffcc00;
     }
 
     .link-card:hover {
       background: #400000;
       box-shadow: 0 0 20px #ff3c00;
-      transform: scale(1.04);
+      transform: scale(1.03);
     }
 
     .footer {
-      margin-top: 40px;
+      margin-top: 50px;
       font-size: 13px;
-      color: #666;
+      color: #999;
     }
 
     .footer a {
@@ -95,23 +103,23 @@
   </style>
 </head>
 <body>
-  <img src="https://example.com/avatar.jpg" alt="Avatar" class="avatar">
-  <h1>🚒 @spaughtfire</h1>
-  <p class="tagline">VRChat Dancer | Content Creator | IRL Fire Fighter 🔥 | Paramedic ⛑️</p>
+  <img src="https://raw.githubusercontent.com/Syr0nix/Spaughtfire/main/Profile.png" alt="Avatar" class="avatar">
+  <h1>@spaughtfire</h1>
+  <p class="tagline">VRChat Dancer | Content Creator | IRL Firefighter / Paramedic</p>
 
   <div class="links">
-    <a class="link-card" href="https://example.com/spaughtfire">🔥 Spaught Fire</a>
-    <a class="link-card" href="https://instagram.com">📸 Instagram</a>
-    <a class="link-card" href="https://www.lovense.com">❤️‍🔥 Lovense</a>
-    <a class="link-card" href="https://twitch.tv/spaughtfire">🎮 Twitch</a>
-    <a class="link-card" href="https://twitter.com">🐦 Twitter</a>
-    <a class="link-card" href="https://bsky.social/@spaughtfire">🌌 Bluesky</a>
-    <a class="link-card" href="https://ko-fi.com">☕ Ko-fi</a>
-    <a class="link-card" href="https://fansly.com">🔥 Fansly</a>
+    <a class="link-card" href="https://example.com/spaughtfire"><i class="fas fa-link"></i>Spaught Fire</a>
+    <a class="link-card" href="https://instagram.com"><i class="fab fa-instagram"></i>Instagram</a>
+    <a class="link-card" href="https://www.lovense.com"><i class="fas fa-heart"></i>Lovense</a>
+    <a class="link-card" href="https://twitch.tv/spaughtfire"><i class="fab fa-twitch"></i>Twitch</a>
+    <a class="link-card" href="https://twitter.com"><i class="fab fa-twitter"></i>Twitter</a>
+    <a class="link-card" href="https://bsky.social/@spaughtfire"><i class="fas fa-cloud"></i>Bluesky</a>
+    <a class="link-card" href="https://ko-fi.com"><i class="fas fa-mug-hot"></i>Ko-fi</a>
+    <a class="link-card" href="https://fansly.com"><i class="fas fa-star"></i>Fansly</a>
   </div>
 
   <div class="footer">
-    Made with 🔥 by <a href="https://github.com/Syr0nix">Syr0nix</a>
+    &copy; 2025 <a href="https://github.com/Syr0nix">Syr0nix</a> | All rights reserved.
   </div>
 </body>
 </html>
